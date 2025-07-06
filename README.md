@@ -12,4 +12,4 @@
 
 ## 依赖
 
-(kdotool)[https://github.com/jinliu/kdotool]
+[kdotool](https://github.com/jinliu/kdotool)
