@@ -1,3 +1,5 @@
 #!/bin/bash
 /usr/bin/xdg-open "$@"
-kdotool windowactivate $(kdotool search --name "firefox" | head -n1)
+if [[ "$1" =~ ^https?:// ]] || [[ "$1" =~ ^ftp:// ]] || [[ "$1" =~ ^file:// ]]; then
+    kdotool windowactivate $(kdotool search --name "firefox" | head -n1)
+fi
